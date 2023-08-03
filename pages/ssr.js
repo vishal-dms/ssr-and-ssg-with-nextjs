@@ -15,7 +15,7 @@ const Home = ({ data }) => {
 }
 
 export async function getServerSideProps (context) {
-  console.log(JSON.stringify(context));
+  console.log(context);
   const response = await fetch('https://swapi.dev/api/films/')
   const data = await response.json()
 
